@@ -1,0 +1,31 @@
+---
+import mainText from '../assets/maintext.svg'
+import '../styles/main.sass'
+
+import { Image } from 'astro:assets';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/iso.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>El Baul de AI</title>
+  </head>
+  <body>
+    <header>
+      <aside>
+		<div class="top-section">
+			<Image src={mainText} alt="iso" width={200} />
+			<p>El Baúl de la IA es una pagina de agrupa las investigaciones mas importantes en el mundo de la Inteligencia Artificial.</p>
+		</div>
+		<div class="search-section">
+			<input type="text" placeholder="Buscar" />
+			
+		</div>
+	  </aside>
+      <main></main>
+    </header>
+  </body>
+</html>

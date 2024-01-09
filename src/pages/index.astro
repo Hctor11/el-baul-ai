@@ -1,8 +1,8 @@
 ---
-import mainText from '../assets/maintext.svg'
-import '../styles/main.sass'
+import mainText from "../assets/maintext.svg";
+import "../styles/main.sass";
 
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
 ---
 
 <html lang="en">
@@ -11,21 +11,25 @@ import { Image } from 'astro:assets';
     <link rel="icon" type="image/svg+xml" href="/iso.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <meta name="description" content="Las investigaciones mas importantes en el mundo de la Inteligencia Artificial facil y rapido." />
+    <meta
+      name="description"
+      content="Las investigaciones mas importantes en el mundo de la Inteligencia Artificial facil y rapido."
+    />
     <title>AI Vault</title>
   </head>
   <body>
     <header>
       <aside>
-		<div class="top-section">
-			<Image src={mainText} alt="iso" width={200} />
-			<p>El AI Vault es una pagina de agrupa las investigaciones mas importantes en el mundo de la Inteligencia Artificial.</p>
-		</div>
-		<div class="search-section">
-			<input type="text" placeholder="Buscar por titulo" />
-			
-		</div>
-	  </aside>
+        <div class="top-section">
+          <Image src={mainText} alt="iso" width={150} />
+          <p>
+            AI Vault is a hub of the most relevant AI research papers in the last 5 years.
+          </p>
+        </div>
+        <div class="search-section">
+          <input type="text" placeholder="Buscar por titulo" />
+        </div>
+      </aside>
       <main></main>
     </header>
   </body>

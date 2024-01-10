@@ -12,6 +12,19 @@ const Main = () => {
                     {item.title}
                 </div>
                 <div className="image">
+                    <div className="tags">
+                        <span className="year">
+                            {item.year}
+                        </span>
+                        {item.categories.map((category) => (
+                                <>
+                                    <span className="category">
+                                        {category === "Computer Vision" ? "👁️Computer Vision" :
+                                         category === "NLP" ? "📃NLP" : null}
+                                    </span>
+                                </>
+                            ))}
+                    </div>
                     <img src={`src/assets/images/${item.image}`} alt="image"/>
                 </div>
             </div>

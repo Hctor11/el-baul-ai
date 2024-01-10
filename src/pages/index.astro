@@ -3,6 +3,8 @@ import mainText from "../assets/maintext.svg";
 import "../styles/main.sass";
 
 import { Image } from "astro:assets";
+import Search from "../components/Search";
+import Main from '../components/Main'
 ---
 
 <html lang="en">
@@ -26,11 +28,11 @@ import { Image } from "astro:assets";
             AI Vault is a hub of the most relevant AI research papers in the last 5 years.
           </p>
         </div>
-        <div class="search-section">
-          <input type="text" placeholder="Buscar por titulo" />
-        </div>
+        <Search client:load/>
       </aside>
-      <main></main>
+      <main>
+        <Main/>
+      </main>
     </header>
   </body>
 </html>

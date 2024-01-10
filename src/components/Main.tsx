@@ -4,7 +4,7 @@ import '../assets/images/img1.png'
 
 const Main = () => {
   return (
-    <div>
+    <div className="items">
       {CONTENT.map((item:entry) => (
         <>
             <div className="item">

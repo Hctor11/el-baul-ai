@@ -1,7 +1,7 @@
 export interface entry {
   title: string;
   year: number;
-  categories: Array<"Computer Vision" | "NLP">;
+  categories: string[];
   class: "Important" | "Relevant" | "Impressive";
   image: string;
   link: string;
